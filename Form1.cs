@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using NPOI.XSSF.UserModel; //Librerías necesarias para el manejo del archivo
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
