@@ -39,9 +39,13 @@ namespace Estudiantes
                 Libro  = LeerLibro(openFileDialog1.FileName);
                 if (Libro != null)
                 {
-                    ProcesarLibro();
-                    CargarCombos();
-                    MessageBox.Show("Archivo cargado exitosamente");
+                    try
+                    {
+                        ProcesarLibro();
+                        CargarCombos();
+                        MessageBox.Show("Archivo cargado exitosamente");
+                    }
+                    catch(Exception ex) { MessageBox.Show(ex.Message); }
                 }
             }
         }
